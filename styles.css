@@ -1,49 +1,9 @@
 body {
 	background-color: rgb(156, 155, 154);
+	line-height: 1.5;
 }
 
-* {
-	box-sizing: border-box;
-}
-
-.first {
-	margin-top: 100px;
-}
-.article {
-	background-color: rgb(252, 250, 248);
-	padding: 10px;
-}
-.row,
-.article {
-	margin-left: auto;
-	margin-right: auto;
-
-	max-width: 800px;
-}
-
-.row > div {
-	float: left;
-	width: 50%;
-	padding: 10px;
-}
-
-.column {
-	float: left;
-	width: 50%;
-	padding: 10px;
-}
-
-.column:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
+/* HEADER */
 
 header {
 	position: absolute;
@@ -53,12 +13,37 @@ header {
 	width: 100%;
 }
 
-header ul {
-	padding-left: 150px;
-}
-header li {
-	display: inline;
+header > div > p {
+	display: inline-block;
 	color: rgb(252, 250, 248);
-	padding: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
 	border-right: 1px solid grey;
+	/* border: solid red; */
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+/* ARTICLE */
+
+article > div:first-child {
+	margin-top: 100px;
+}
+
+article > div,
+header > div {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 800px;
+}
+article > div {
+	background-color: rgb(252, 250, 248);
+	padding: 10px;
+}
+
+article > div > div {
+	display: inline-block;
+	width: 49%;
 }
