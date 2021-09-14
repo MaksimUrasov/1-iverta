@@ -41,9 +41,13 @@ header > div {
 article > div {
 	background-color: rgb(252, 250, 248);
 	padding: 10px;
+	/* font-size: 0; */
 }
 
 article > div > div {
 	display: inline-block;
-	width: 49%;
+	width: 46%;
+}
+article > div > div:first-child {
+	padding-right: 40px;
 }
